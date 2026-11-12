@@ -8,3 +8,4 @@ RUN make build
 
 FROM eceasy/cli-proxy-api:latest
 COPY --from=plugin-builder /src/tokenharbor-cpa-plugin/tokenharbor.so /CLIProxyAPI/plugins/tokenharbor.so
+EXPOSE 8317
